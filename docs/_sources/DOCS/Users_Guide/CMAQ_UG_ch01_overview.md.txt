@@ -60,7 +60,7 @@ In addition to the air pollutant concentration and deposition fields output by C
 4.  *[Integrated Process Rates (IPR)](CMAQ_UG_ch09_process_analysis.md)*: CMAQ can be configured to output the process rates for each of the modeled processes impacting change in ambient concentrations of modeled species. This essentially provides a breakdown of the various terms contributing to the overall species mass-balance and thus helps with species mass-budget analysis.
 5.  *[Integrated Reaction Rates (IRR)](CMAQ_UG_ch09_process_analysis.md)*: This technique involves integrating the rates of individual chemical reactions represented in the gas-phase chemical mechanism employed by CMAQ. As an example, this information can then be used to infer the relative importance of various precursor species contributing to ozone production in a grid cell or region.
 6.  *[Budget Tool](CMAQ_UG_ch09_process_analysis.md)*: This tool outputs domain-wide burden and specific process rates for user-selected variables in a summarized ascii file. This data can be useful in understanding broad features of the lifecycle of trace pollutants and in diagnosing potential model inconsistencies.
-7.  *[Explicit and Lumped CMAQ Model Output (ELMO) Module](Appendix/CMAQ_UG_appendixG_elmo_output.md)*: The ELMO Module allows users to request direct output of aggregate variables like PM<sub>2.5</sub> mass, total organic aerosol, and aerosol properties like mode-specific diameter and standard deviation. Users can also select scalar CMAQ variables and meteorological variables be added to ELMO output files.
+7.  *[Explicit and Lumped CMAQ Model Output (ELMO) Module](Appendix/CMAQ_UG_appendixF_elmo_output.md)*: The ELMO Module allows users to request direct output of aggregate variables like PM<sub>2.5</sub> mass, total organic aerosol, and aerosol properties like mode-specific diameter and standard deviation. Users can also select scalar CMAQ variables and meteorological variables be added to ELMO output files.
 
 ## 1.4 New Features in CMAQv5.5
 Building on previous versions of the modeling system, numerous updates to the process science and model structure have been implemented in CMAQv5.5 including:  
@@ -73,7 +73,7 @@ Building on previous versions of the modeling system, numerous updates to the pr
 
 4. A  new option for estimation of photolysis rates was included.  This option includes a new approach to estimate the effects of aerosol optical properties on photolysis rates. The approach provides a better match to optical properties determined by solving Mie scattering theory for spherical particles than the default method (FastOptics) but at comparable runtimes.
    
-See the [CMAQv5.5 Series FAQ](https://github.com/USEPA/CMAQ/wiki/CMAQv5.5-Series-FAQ) for more information on model updates in the new release. 
+See the [CMAQv5.5 Series FAQ](../Release_FAQ/CMAQv5.5-Series-FAQ) for more information on model updates in the new release. 
 
 ## 1.5 System Recommendations
 CMAQ is a comprehensive air pollution modeling system whose source code is written mostly in Fortran. CMAQ execution is typically performed on Linux based systems. The hardware configuration of such a system depends on the domain size, grid resolution and simulation duration. Since typical input and output data sets for CMAQ entail three dimensional descriptions of the dynamical and chemical state of the simulated atmosphere, these data sets could require upwards of several gigabytes of disk storage per simulation day.
