@@ -16,8 +16,14 @@ There are many resources available for learning about the CMAQ system.  This tab
 
 <a id=getting_running></a>
 ## Resources for running a simulation
-*
-*
+* [Configure your compute environment](./Users_Guide/CMAQ_UG_ch03_preparing_compute_environment.md) - List of hardware and software requirements for CMAQ
+* [Get the code](./Users_Guide/CMAQ_UG_ch05_running_a_simulation.md#52-getting-the-cmaq-source-code) - Links to download CMAQ
+* [Run a Benchmark simulation](./Users_Guide/Tutorials/CMAQ_UG_tutorial_benchmark.md) - Running your first CMAQ simluation after meeting hardware and software requirements
+* [Configure the build for your application](./Users_Guide/CMAQ_UG_ch06_model_configuration_options.md) - User configurable science options 
+* [Download input data](https://dataverse.unc.edu/dataverse/cmascenter) - CMAQ-ready input data files for some USEPA applications
+
+
+
 
 <a id=cmaq_data></a>
 ## Where to find CMAQ data
