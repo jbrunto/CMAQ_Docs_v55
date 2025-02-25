@@ -133,7 +133,7 @@
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../README.html">
-    CMAQ Documentation
+    CMAQ User’s Guide
   </a>
 </li>
 
@@ -280,7 +280,7 @@
     
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../README.html">
-    CMAQ Documentation
+    CMAQ User’s Guide
   </a>
 </li>
 
@@ -456,7 +456,7 @@
 <section id="f-1-output-concentration-and-diagnostic-variables">
 <h2>F.1 Output concentration and diagnostic variables<a class="headerlink" href="#f-1-output-concentration-and-diagnostic-variables" title="Link to this heading">#</a></h2>
 <p>The ELMO Module streamlines the definition, calculation, and maintenance of gas and particulate concentrations, as well as over 200 aggregate and diagnostic variables, listed in Fig. 1.
-With ELMO, aggregate and diagnostic variables are registered in the <a class="reference download internal" download="" href="../../../_downloads/0ef4480aa96f206254d83dab908ab112/ELMO_DATA.F"><span class="xref download myst">ELMO_DATA.F</span></a>, their calculations are prescribed in <a class="reference download internal" download="" href="../../../_downloads/92cce048801a31be54a099cd47d3779c/ELMO_PROC.F"><span class="xref download myst">ELMO_PROC.F</span></a>, and CMAQ calculates them online.
+With ELMO, aggregate and diagnostic variables are registered in the <a class="reference external" href="https://github.com/USEPA/CMAQ/blob/main/CCTM/src/driver/ELMO_DATA.F">ELMO_DATA.F</a>, their calculations are prescribed in <a class="reference external" href="https://github.com/USEPA/CMAQ/blob/main/CCTM/src/driver/ELMO_PROC.F">ELMO_PROC.F</a>, and CMAQ calculates them online.
 Thus, CMAQ can output higher-level parameters without needing to run any particular post-processing tool.
 As a result, users may choose to limit their output to just the variables they are most interested in (perhaps just O<sub>3</sub> and PM2.5, for example). Or they may elect to output a more complex selection of scalar and aggregate variables.
 Post-processing is still needed to concatenate days of output together onto monthly, seasonal, or annual files.</p>
@@ -617,7 +617,7 @@ This and other ELMO keywords are defined in Table F-1.</p>
 </table>
 </div>
 <p><sub>#</sup>As noted for red variables in Fig. F-1, several variables are populated for each aerosol mode including diameters, standard deviation, and density, etc.</p>
-<p>The ELMO variables are defined in <a class="reference download internal" download="" href="../../../_downloads/0ef4480aa96f206254d83dab908ab112/ELMO_DATA.F"><span class="xref download myst">ELMO_DATA.F</span></a>.
+<p>The ELMO variables are defined in <a class="reference external" href="https://github.com/USEPA/CMAQ/blob/main/CCTM/src/driver/ELMO_DATA.F">ELMO_DATA.F</a>.
 Before ELMO maps output variables to internal model species or meteorological inputs, ELMO recursively expands all Keywords to their members and then filters out duplicates. There is no disadvantage to specifying a variable twice in the CMAQ Control namelist.</p>
 </section>
 <section id="f-5-elmo-implementation-in-cmaq">
@@ -640,6 +640,8 @@ Follow the example of existing variables to prescribe the species to be added, t
 <p><a class="reference internal" href="CMAQ_UG_appendixE_configuring_WRF.html"><span class="std std-doc">&lt;&lt; Previous Appendix</span></a> - <a class="reference internal" href="../README.html"><span class="std std-doc">Home</span></a> <br>
 CMAQv5.5 User’s Guide<br></p>
 <!-- END COMMENT -->
+<p><a class="reference internal" href="#hardcode_links"><code class="xref myst docutils literal notranslate"><span class="pre">hardcode_links</span></code></a></p>
+<p>[link_F_Control]:</p>
 </section>
 </section>
 

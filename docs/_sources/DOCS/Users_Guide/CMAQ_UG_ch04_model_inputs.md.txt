@@ -21,7 +21,7 @@ Full input datasets for 2016 over two domains are publically available to downlo
 
 
 ## 4.2 CMAQ Pre-processors 
-[Figure 2-1](./images/Figure2-1.jpg) shows the relationship between CMAQ pre-processors and the main CMAQ program, the CMAQ Chemistry Transport Model (CCTM).  MCIP, ICON and BCON are included in the CMAQ repository and are used to create meteorological, initial conditions and boundary conditions inputs.  SMOKE, FEST-C and Spatial Allocator Tools are external software packages used for creating emissions inputs for CMAQ.  The following subsections provide more information on these tools and point the user to additional sources of documentation. 
+[Figure 2-1][link_4.2_fig2] shows the relationship between CMAQ pre-processors and the main CMAQ program, the CMAQ Chemistry Transport Model (CCTM).  MCIP, ICON and BCON are included in the CMAQ repository and are used to create meteorological, initial conditions and boundary conditions inputs.  SMOKE, FEST-C and Spatial Allocator Tools are external software packages used for creating emissions inputs for CMAQ.  The following subsections provide more information on these tools and point the user to additional sources of documentation. 
 
 ### 4.2.1 Meteorology-Chemistry Interface Processor (MCIP)
 
@@ -209,11 +209,11 @@ Namelist look-up tables for different classes of simulated pollutants are used t
 -   BC Factor  if the pollutant is mapped to a boundary condition species, uniformly apply a scaling factor to the concentrations.
 -   Deposition velocity  which (if any) deposition velocity is the deposition velocity for the pollutant mapped to; allowed velocities are specified within the model source code.
 -   Deposition velocity factor  if the pollutant is mapped to a deposition velocity, uniformly apply a scaling factor to this velocity.
--   Scavenging - which (if any) species is the pollutant mapped to; Allowed scavenging surrogates are specified within the model source code ("[hlconst.F](../../CCTM/src/cloud/acm_ae6/hlconst.F)").
+-   Scavenging - which (if any) species is the pollutant mapped to; Allowed scavenging surrogates are specified within the model source code ("[hlconst.F][link_4.4_hlconst]").
 -   Scavenging factor - if the pollutant is mapped to a species for scavenging, uniformly apply a scaling factor to the scavenging rate.
--   Gas-to-aerosol conversion  which (if any) aerosol chemistry species does the gas phase pollutant concentration go into for transformation from the gas-phase to the aerosol-phase.  Allowed gas-to-aerosol surrogates are specified within the model source code ("[PRECURSOR_DATA.F](../../CCTM/src/aero/aero6/PRECURSOR_DATA.F)" and "[SOA_DEFN.F](../../CCTM/src/aero/aero6/SOA_DEFN.F)")
--   Gas-to-aqueous Surrogate  which (if any) cloud chemistry species does the gas pollutant concentration go into for simulating chemistry within cloud water. Allowed gas-to-aqueous surrogates are specified within the model source code and depends on the cloud model/aqueous chemistry being used (for example, for the acm_ae6, see "[AQ_DATA.F](../../CCTM/src/cloud/acm_ae6/AQ_DATA.F)").
--   Aerosol-to-aqueous Surrogate  which (if any) cloud chemistry species does the aerosol pollutant concentration go into for simulating chemistry within cloud water.  Allowed aerosol-to-aqueous surrogates are specified within the model source code and depends on the cloud model/aqueous chemistry being used (for example, for the acm_ae6, see "[AQ_DATA.F](../../CCTM/src/cloud/acm_ae6/AQ_DATA.F)").
+-   Gas-to-aerosol conversion  which (if any) aerosol chemistry species does the gas phase pollutant concentration go into for transformation from the gas-phase to the aerosol-phase.  Allowed gas-to-aerosol surrogates are specified within the model source code ("[PRECURSOR_DATA.F][link_4.4_precursor]" and "[SOA_DEFN.F][link_4.4_soa]")
+-   Gas-to-aqueous Surrogate  which (if any) cloud chemistry species does the gas pollutant concentration go into for simulating chemistry within cloud water. Allowed gas-to-aqueous surrogates are specified within the model source code and depends on the cloud model/aqueous chemistry being used (for example, for the acm_ae6, see "[AQ_DATA.F][link_4.4_aq]").
+-   Aerosol-to-aqueous Surrogate  which (if any) cloud chemistry species does the aerosol pollutant concentration go into for simulating chemistry within cloud water.  Allowed aerosol-to-aqueous surrogates are specified within the model source code and depends on the cloud model/aqueous chemistry being used (for example, for the acm_ae6, see "[AQ_DATA.F][link_4.4_aq]").
 -   Transport  is the pollutant transported by advection and diffusion in the model?
 -   Dry deposition  Write the pollutant to the dry deposition output file?
 -   Wet deposition  Write the pollutant to the wet deposition output file?
@@ -248,7 +248,7 @@ The namelist files contain header information that describe which class of speci
 
 
 
-The namelist files for the other pollutant classes have similar configurations as the gas-phase species configuration shown in [Table 4-2](#Table4-2). For an example see this [link](../../CCTM/src/MECHS/cb06r3_ae7_aq/GC_cb6r3_ae7_aq.nml) to the GC namelist species file for the cb06r3_ae7_aq mechanism.
+The namelist files for the other pollutant classes have similar configurations as the gas-phase species configuration shown in [Table 4-2](#Table4-2). For an example see this [link][link_4.4_nml] to the GC namelist species file for the cb06r3_ae7_aq mechanism.
 
 <a id=miscctrl></a>
 
@@ -885,3 +885,9 @@ Wavelength and photolysis rate parameters for CMAQ in-line photolysis calculatio
 [link_4.2.2_I]: https://github.com/USEPA/CMAQ/blob/main/PREP/bcon/src/profile
 [link_4.2.2_II]: https://github.com/USEPA/CMAQ/blob/main/PREP/icon/
 [link_4.2.3]: https://github.com/USEPA/CMAQ/blob/main/PREP/bcon/
+[link_4.4_hlconst]: https://github.com/USEPA/CMAQ/blob/main/CCTM/src/cloud/acm_ae6/hlconst.F
+[link_4.4_precursor]: https://github.com/USEPA/CMAQ/blob/main/CCTM/src/aero/aero6/PRECURSOR_DATA.F
+[link_4.4_soa]: https://github.com/USEPA/CMAQ/blob/main/CCTM/src/aero/aero6/SOA_DEFN.F
+[link_4.4_aq]: https://github.com/USEPA/CMAQ/blob/main/CCTM/src/cloud/acm_ae6/AQ_DATA.F
+[link_4.4_nml]: https://github.com/USEPA/CMAQ/blob/main/CCTM/src/MECHS/cb06r3_ae7_aq/GC_cb6r3_ae7_aq.nml
+[link_4.2_fig2]: https://github.com/USEPA/CMAQ/blob/main/images/Figure2-1.jpg
