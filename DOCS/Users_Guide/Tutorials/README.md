@@ -35,9 +35,6 @@ A series of short tutorials provide practical examples of how to set up and run 
 [link_tut_netcdf]: gcc_install_netcdf_for_nc4_compression.csh
 [link_tut_medry]: gcc_install_cmaq55_cb6r5_m3dry.csh
 
-[](relative_links_end)  
-
-
 [](hardcode_links)  
 
 [link_tut_ioapi]: https://github.com/USEPA/CMAQ/blob/main/DOCS/Users_Guide/Tutorials/gcc_install_ioapi_for_nc4_compression.csh 

@@ -250,9 +250,6 @@ In the CMAQ run script, replace the default tracer namelist file `Species_Table_
 
 [link_1]: ../../../POST/combine/
 
-[](relative_links_end)  
-
-
 [](hardcode_links)  
 
 [link_1]: https://github.com/USEPA/CMAQ/blob/main/POST/combine/ 

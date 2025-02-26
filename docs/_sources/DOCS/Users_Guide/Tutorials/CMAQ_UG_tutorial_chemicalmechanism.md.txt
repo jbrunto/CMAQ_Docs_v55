@@ -397,8 +397,5 @@ You should now be able to see these changes in Github online.
 
 
  
-
-[](hardcode_links)  
-
 [link_1]: https://github.com/USEPA/CMAQ/blob/main/UTIL/chemmech/
 [link_2]: https://github.com/USEPA/CMAQ/blob/main/UTIL/create_ebi/ 

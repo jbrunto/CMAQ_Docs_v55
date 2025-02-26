@@ -427,10 +427,6 @@ CMAQv5.5 User's Guide <br>
 [link_B.1_desid]: ../../../CCTM/src/MECHS/cb6r5_ae7_aq/CMAQ_Control_DESID_cb6r5_ae7_aq.nml
 [link_B.3_aero]:  ../../../CCTM/src/aero/aero6/AERO_DATA.F
 
-
-[](relative_links_end)  
-
-
 [](hardcode_links)  
 
 [link_B.3]: https://github.com/USEPA/CMAQ/blob/main/PYTOOLS/shp2cmaq/ 

@@ -420,9 +420,6 @@ CMAQv5.5 User's Guide <br>
 <!-- END COMMENT -->
 
  
-
-[](hardcode_links)  
-
 [link_B.3]: https://github.com/USEPA/CMAQ/blob/main/PYTOOLS/shp2cmaq/ 
 [link_B.1_misc]: https://github.com/USEPA/CMAQ/blob/main/CCTM/src/util/util/CMAQ_Control_Misc.nml
 [link_B.1_desis]: https://github.com/USEPA/CMAQ/blob/main/CCTM/src/emis/emis/CMAQ_Control_DESID.nml

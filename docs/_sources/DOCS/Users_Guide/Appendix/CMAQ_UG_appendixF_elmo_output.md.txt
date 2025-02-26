@@ -56,7 +56,7 @@ For example, total PM2.5 have some small deviations when it is calculated as the
 
 
 ### F.3 Prescribing features of ELMO output files
-The interface for prescribing ELMO file properties is located in the [CMAQ Miscellaneous Control File](https://github.com/USEPA/CMAQ_Dev/blob/research/DOCS/Users_Guide/CMAQ_UG_ch04_model_inputs.md#miscctrl). The following lines activate or deactivate instantaneous (CCTM_ELMO) and average (CCTM_AELMO) files, respectively:
+The interface for prescribing ELMO file properties is located in the [CMAQ Miscellaneous Control File](../CMAQ_UG_ch04_model_inputs.md#miscctrl). The following lines activate or deactivate instantaneous (CCTM_ELMO) and average (CCTM_AELMO) files, respectively:
 ```
 &elmo_activate
   instant = .FALSE.
@@ -87,7 +87,7 @@ When 2D variables are output on a 3D ELMO file, ELMO will put real data in layer
 
 ### F.4 Selecting ELMO output variables
 All CMAQ scalar variables and all variables in Fig. F-1 are available for output on ELMO files. 
-The [CMAQ Miscellaneous Control File](https://github.com/USEPA/CMAQ_Dev/blob/research/DOCS/Users_Guide/CMAQ_UG_ch04_model_inputs.md#miscctrl) variables Inst_Vars_Nml and Avrg_Vars_Nml (shown in section F.3) control the variables output to the instantaneous and average ELMO files, respectively. 
+The [CMAQ Miscellaneous Control File](../CMAQ_UG_ch04_model_inputs.md#miscctrl) variables Inst_Vars_Nml and Avrg_Vars_Nml (shown in section F.3) control the variables output to the instantaneous and average ELMO files, respectively. 
 Up to 1000 strings may be specified here. 
 To avoid relying on intimidatingly long lists of variable names, ELMO uses Keywords that expand to groups of variables (often particularly meaningful or useful ones). 
 In this way, ELMO improves transparency and reduces the risk of needing to rerun simulations to produce mistakenly omitted variables. 
@@ -157,9 +157,6 @@ CMAQv5.5 User's Guide<br>
 <!-- END COMMENT -->
 
  
-
-[](hardcode_links)  
-
 [link_F_Data]: https://github.com/USEPA/CMAQ/blob/main/CCTM/src/driver/ELMO_DATA.F
 [link_F_Proc]: https://github.com/USEPA/CMAQ/blob/main/CCTM/src/driver/ELMO_PROC.F
 [link_F_Control]:

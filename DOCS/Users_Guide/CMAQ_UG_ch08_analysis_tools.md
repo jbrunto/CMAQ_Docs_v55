@@ -106,9 +106,6 @@ CMAQv5.5 User's Guide <br>
 [link_8.3_IV]: ../../POST/sitecmp/scripts/
 [link_8.5]: ../../PREP/mcip/
 
-[](relative_links_end)  
-
-
 [](hardcode_links)  
 
 [link_8.2]: https://github.com/USEPA/CMAQ/blob/main/POST/combine/

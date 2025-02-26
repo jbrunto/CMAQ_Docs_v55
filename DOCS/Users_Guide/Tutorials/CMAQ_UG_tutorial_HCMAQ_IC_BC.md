@@ -365,9 +365,6 @@ The run script below uses the [`BCON`][link_3] program to create boundary condit
 [link_2]: ../../../PREP/icon/
 [link_3]: ../../../PREP/bcon
 
-[](relative_links_end)  
-
-
 [](hardcode_links)  
 
 [link_1]: https://github.com/USEPA/CMAQ/blob/main/PREP/bcon/map2mech/

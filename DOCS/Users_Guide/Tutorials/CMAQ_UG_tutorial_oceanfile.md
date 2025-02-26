@@ -160,9 +160,6 @@ After running the script, check for the output file designated in the above scri
 [link_1]: ../../../PYTOOLS/
 [link_2]: ../../../PYTOOLS/dmschlo/
 
-[](relative_links_end)  
-
-
 [](hardcode_links)  
 
 [link_1]: https://github.com/USEPA/CMAQ/blob/main/PYTOOLS/

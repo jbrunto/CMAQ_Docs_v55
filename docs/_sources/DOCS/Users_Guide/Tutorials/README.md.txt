@@ -30,9 +30,6 @@ A series of short tutorials provide practical examples of how to set up and run 
   - [Modifying a CMAQ Chemical Mechanism](CMAQ_UG_tutorial_chemicalmechanism.md)
 
  
-
-[](hardcode_links)  
-
 [link_tut_ioapi]: https://github.com/USEPA/CMAQ/blob/main/DOCS/Users_Guide/Tutorials/gcc_install_ioapi_for_nc4_compression.csh 
 [link_tut_netcdf]: https://github.com/USEPA/CMAQ/blob/main/DOCS/Users_Guide/Tutorials/gcc_install_netcdf_for_nc4_compression.csh
 [link_tut_medry]: https://github.com/USEPA/CMAQ/blob/main/DOCS/Users_Guide/Tutorials/gcc_install_cmaq55_cb6r5_m3dry.csh

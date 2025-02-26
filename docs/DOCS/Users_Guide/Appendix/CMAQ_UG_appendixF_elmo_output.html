@@ -494,7 +494,7 @@ For example, total PM2.5 have some small deviations when it is calculated as the
 </section>
 <section id="f-3-prescribing-features-of-elmo-output-files">
 <h2>F.3 Prescribing features of ELMO output files<a class="headerlink" href="#f-3-prescribing-features-of-elmo-output-files" title="Link to this heading">#</a></h2>
-<p>The interface for prescribing ELMO file properties is located in the <a class="reference external" href="https://github.com/USEPA/CMAQ_Dev/blob/research/DOCS/Users_Guide/CMAQ_UG_ch04_model_inputs.md#miscctrl">CMAQ Miscellaneous Control File</a>. The following lines activate or deactivate instantaneous (CCTM_ELMO) and average (CCTM_AELMO) files, respectively:</p>
+<p>The interface for prescribing ELMO file properties is located in the <a class="reference internal" href="../CMAQ_UG_ch04_model_inputs.html#miscctrl"><span class="std std-ref">CMAQ Miscellaneous Control File</span></a>. The following lines activate or deactivate instantaneous (CCTM_ELMO) and average (CCTM_AELMO) files, respectively:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span><span class="n">elmo_activate</span>
   <span class="n">instant</span> <span class="o">=</span> <span class="o">.</span><span class="n">FALSE</span><span class="o">.</span>
   <span class="n">average</span> <span class="o">=</span> <span class="o">.</span><span class="n">TRUE</span><span class="o">.</span>
@@ -524,7 +524,7 @@ When 2D variables are output on a 3D ELMO file, ELMO will put real data in layer
 <section id="f-4-selecting-elmo-output-variables">
 <h2>F.4 Selecting ELMO output variables<a class="headerlink" href="#f-4-selecting-elmo-output-variables" title="Link to this heading">#</a></h2>
 <p>All CMAQ scalar variables and all variables in Fig. F-1 are available for output on ELMO files.
-The <a class="reference external" href="https://github.com/USEPA/CMAQ_Dev/blob/research/DOCS/Users_Guide/CMAQ_UG_ch04_model_inputs.md#miscctrl">CMAQ Miscellaneous Control File</a> variables Inst_Vars_Nml and Avrg_Vars_Nml (shown in section F.3) control the variables output to the instantaneous and average ELMO files, respectively.
+The <a class="reference internal" href="../CMAQ_UG_ch04_model_inputs.html#miscctrl"><span class="std std-ref">CMAQ Miscellaneous Control File</span></a> variables Inst_Vars_Nml and Avrg_Vars_Nml (shown in section F.3) control the variables output to the instantaneous and average ELMO files, respectively.
 Up to 1000 strings may be specified here.
 To avoid relying on intimidatingly long lists of variable names, ELMO uses Keywords that expand to groups of variables (often particularly meaningful or useful ones).
 In this way, ELMO improves transparency and reduces the risk of needing to rerun simulations to produce mistakenly omitted variables.
@@ -640,7 +640,6 @@ Follow the example of existing variables to prescribe the species to be added, t
 <p><a class="reference internal" href="CMAQ_UG_appendixE_configuring_WRF.html"><span class="std std-doc">&lt;&lt; Previous Appendix</span></a> - <a class="reference internal" href="../README.html"><span class="std std-doc">Home</span></a> <br>
 CMAQv5.5 User’s Guide<br></p>
 <!-- END COMMENT -->
-<p><a class="reference internal" href="#hardcode_links"><code class="xref myst docutils literal notranslate"><span class="pre">hardcode_links</span></code></a></p>
 <p>[link_F_Control]:</p>
 </section>
 </section>

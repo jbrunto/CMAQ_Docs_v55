@@ -101,7 +101,4 @@ CMAQv5.5 User's Guide <br>
 <!-- END COMMENT -->
 
  
-
-[](hardcode_links)  
-
 [link_C.4]: https://github.com/USEPA/CMAQ/blob/main/PYTOOLS/shp2cmaq/ 

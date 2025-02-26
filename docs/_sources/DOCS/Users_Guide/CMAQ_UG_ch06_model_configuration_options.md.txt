@@ -1201,9 +1201,6 @@ CMAQv5.5 User's Guide <br>
 <!-- END COMMENT -->
 
  
-
-[](hardcode_links)  
-
 [link_6.1]: https://github.com/USEPA/CMAQ/blob/main/PREP/mcip/
 [link_6.10.1]: https://github.com/USEPA/CMAQ/blob/main/UTIL/create_ebi/
 [link_6.10.2]: https://github.com/USEPA/CMAQ/blob/main/UTIL/jproc/

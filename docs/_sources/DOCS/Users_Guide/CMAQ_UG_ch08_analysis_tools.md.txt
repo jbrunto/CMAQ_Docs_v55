@@ -98,9 +98,6 @@ CMAQv5.5 User's Guide <br>
 <!-- END COMMENT -->
 
  
-
-[](hardcode_links)  
-
 [link_8.2]: https://github.com/USEPA/CMAQ/blob/main/POST/combine/
 [link_8.3]: https://github.com/USEPA/CMAQ/blob/main/POST/sitecmp_dailyo3/
 [link_8.3_II]: https://github.com/USEPA/CMAQ/blob/main/POST/sitecmp_dailyo3/scripts/

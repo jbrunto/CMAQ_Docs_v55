@@ -39,9 +39,6 @@ CMAQv5.5 User's Guide <br>
 
 
  
-
-[](hardcode_links)  
-
 [link_2.2]: https://github.com/USEPA/CMAQ/blob/main/PREP/
 [link_2.4]: https://github.com/USEPA/CMAQ/blob/main/POST/ 
 [link_2.5]: https://github.com/USEPA/CMAQ/blob/main/UTIL/

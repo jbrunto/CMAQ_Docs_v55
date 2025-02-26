@@ -95,9 +95,6 @@ CMAQv5.5 User's Guide <br>
 
 [link_13.6]: ../../CCTM/scripts/run_cctm_Bench_2018_12NE3.WRFCMAQ.csh  
 
-[](relative_links_end)  
-
-
 [](hardcode_links)  
 
 [link_13.6]: https://github.com/USEPA/CMAQ/blob/main/CCTM/scripts/run_cctm_Bench_2018_12NE3.WRFCMAQ.csh  
