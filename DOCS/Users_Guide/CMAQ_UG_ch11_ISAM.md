@@ -263,8 +263,8 @@ CMAQv5.5 User's Guide <br>
 
 [](relative_links_start)  
 
-[link_11_pdf]: Supplement/CMAQ_ISAM_Chemistry_Supplemental_Equations.pdf 
+[link_11_pdf]: ./Supplement/CMAQ_ISAM_Chemistry_Supplemental_Equations.pdf 
 
 [](hardcode_links)  
 
-[link_11_pdf]: https://github.com/USEPA/CMAQ/blob/main/Supplement/CMAQ_ISAM_Chemistry_Supplemental_Equations.pdf  
+[link_11_pdf]: https://github.com/USEPA/CMAQ/blob/main/DOCS/Users_Guide/Supplement/CMAQ_ISAM_Chemistry_Supplemental_Equations.pdf

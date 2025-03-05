@@ -887,7 +887,7 @@ Wavelength and photolysis rate parameters for CMAQ in-line photolysis calculatio
 [link_4.4_precursor]: ../../CCTM/src/aero/aero6/PRECURSOR_DATA.F
 [link_4.4_soa]: ../../CCTM/src/aero/aero6/SOA_DEFN.F
 [link_4.4_aq]: ../../CCTM/src/cloud/acm_ae6/AQ_DATA.F
-[link_4.4_nml]: ../../CCTM/src/MECHS/cb06r3_ae7_aq/GC_cb6r3_ae7_aq.nml
+[link_4.4_nml]: ../../CCTM/src/MECHS/cb6r3_ae7_aq/GC_cb6r3_ae7_aq.nml
 [link_4.2_fig2]: ./images/Figure2-1.jpg
 
 [](hardcode_links)  
@@ -900,5 +900,5 @@ Wavelength and photolysis rate parameters for CMAQ in-line photolysis calculatio
 [link_4.4_precursor]: https://github.com/USEPA/CMAQ/blob/main/CCTM/src/aero/aero6/PRECURSOR_DATA.F
 [link_4.4_soa]: https://github.com/USEPA/CMAQ/blob/main/CCTM/src/aero/aero6/SOA_DEFN.F
 [link_4.4_aq]: https://github.com/USEPA/CMAQ/blob/main/CCTM/src/cloud/acm_ae6/AQ_DATA.F
-[link_4.4_nml]: https://github.com/USEPA/CMAQ/blob/main/CCTM/src/MECHS/cb06r3_ae7_aq/GC_cb6r3_ae7_aq.nml
+[link_4.4_nml]: https://github.com/USEPA/CMAQ/blob/main/CCTM/src/MECHS/cb6r3_ae7_aq/GC_cb6r3_ae7_aq.nml
 [link_4.2_fig2]: https://github.com/USEPA/CMAQ/blob/main/images/Figure2-1.jpg
