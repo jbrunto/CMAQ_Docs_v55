@@ -20,7 +20,7 @@ A brief introduction for new and returning users!
 
 +++
 
-```{button-link} DOCS/Getting_Started.html
+```{button-ref} DOCS/Getting_Started
 :color: info
 :shadow:
 Getting Started
@@ -38,7 +38,7 @@ Overview of science processes and directions on how to run CMAQ.
 
 +++
 
-```{button-link} DOCS/Users_Guide/README.html
+```{button-ref} DOCS/Users_Guide/README
 :color: info
 :shadow:
 User's Guide
@@ -56,7 +56,7 @@ Practical examples of how to run CMAQ and exercise different features.
 
 +++
 
-```{button-link} DOCS/Users_Guide/Tutorials/README.html
+```{button-ref} DOCS/Users_Guide/Tutorials/README
 :color: info
 :shadow:
 Tutorials
@@ -74,7 +74,7 @@ Notes on specific model changes from each CMAQ release.
 
 +++
 
-```{button-link} DOCS/Release_Notes/README.html
+```{button-ref} DOCS/Release_Notes/README
 :color: info
 :shadow:
 Release Notes
@@ -92,7 +92,7 @@ Frequently asked questions for upgrading to the latest CMAQ versions.
 
 +++
 
-```{button-link} DOCS/Release_FAQ/README.html
+```{button-ref} DOCS/Release_FAQ/README
 :color: info
 :shadow:
 FAQ Pages
@@ -110,8 +110,7 @@ User support resources to connect with CMAQ users around the world.
 
 +++
 
-```{button-link} DOCS/Community_Support.html
-:ref-type: 
+```{button-ref} ./DOCS/Community_Support
 :color: info
 :shadow:
 Community Support
