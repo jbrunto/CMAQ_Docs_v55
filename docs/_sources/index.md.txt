@@ -111,6 +111,7 @@ User support resources to connect with CMAQ users around the world.
 +++
 
 ```{button-link} DOCS/Community_Support.html
+:ref-type: 
 :color: info
 :shadow:
 Community Support
@@ -131,9 +132,10 @@ Open Source License Information here: [MIT License](./license.md)
 :name: CMAQ Documentation
 :maxdepth: 3
 :hidden:
+Getting Started <DOCS/Getting_Started.md>
 DOCS/Users_Guide/README.md
 DOCS/Users_Guide/Tutorials/README.md
 Release Notes  <DOCS/Release_Notes/README.md>
 FAQs <DOCS/Release_FAQ/README.md>
-
+Community Support <DOCS/Community_Support.md>
 ```
