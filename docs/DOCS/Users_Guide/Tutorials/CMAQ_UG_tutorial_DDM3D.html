@@ -332,17 +332,43 @@
   </div>
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-<h3><a href="../../../index.html"></a></h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../Getting_Started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../README.html">CMAQ User’s Guide</a></li>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Getting_Started.html">Getting Started</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../README.html">CMAQ User’s Guide</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch01_overview.html">1. Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch02_program_structure.html">2. Program Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch03_preparing_compute_environment.html">3. Preparing Compute Environment for CMAQ Simulations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch04_model_inputs.html">4. Model Input Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch05_running_a_simulation.html">5. Running a CMAQ Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch06_model_configuration_options.html">6. Model Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch07_model_outputs.html">7. Model Output Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch08_analysis_tools.html">8. Analysis Tools for CMAQ output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch09_process_analysis.html">9. Process Analysis and Budget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch10_HDDM-3D.html">10. Decoupled Direct Method in Three Dimensions (CMAQ-DDM-3D)</a></li>
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch11_ISAM.html">11. Integrated Source Apportionment Method (CMAQ-ISAM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch12_sulfur_tracking.html">12. Sulfur Tracking Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch13_WRF-CMAQ.html">13. WRF-CMAQ Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch14_MPAS-CMAQ.html">14. MPAS-CMAQ Model</a></li>
+
+</ul>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="README.html">CMAQ Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Release_Notes/README.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Release_FAQ/README.html">FAQs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Community_Support.html">Community Support</a></li>
 </ul>
-</div>
+
+    </div>
+</nav></div>
     </div>
   
   
@@ -631,31 +657,31 @@ tar xvzf output_CCTM_v55_DDM3D_gcc_Bench_2018_12NE3_cb6r5_ae7_aq_m3dry.tar.gz
 
 
   <div class="sidebar-secondary-item">
-  <div>
-    <h3><a href="../../../index.html"></a></h3>
-    <ul>
-<li><a class="reference internal" href="#">CMAQ-DDM3D Benchmark Tutorial</a><ul>
-<li><a class="reference internal" href="#procedure-to-build-and-run-the-cmaq-ddm3d-model-using-cb6r5-mechanism-and-m3dry-dry-deposition-scheme-using-gnu-compiler">Procedure to build and run the CMAQ-DDM3D model using cb6r5 mechanism and m3dry dry deposition scheme using gnu compiler:</a></li>
-<li><a class="reference internal" href="#step-1-download-and-run-the-cmaqv5-5-cb6r5-benchmark-case-without-ddm3d-to-confirm-that-your-model-run-is-consistent-with-the-provided-benchmark-output">Step 1: Download and run the CMAQv5.5 cb6r5 benchmark case (without DDM3D) to confirm that your model run is consistent with the provided benchmark output.</a></li>
-<li><a class="reference internal" href="#step-2-read-the-user-guide-chapter-on-the-decoupled-direct-method-in-three-dimensions">Step 2: Read the User Guide Chapter on the Decoupled Direct Method in Three Dimensions</a></li>
-<li><a class="reference internal" href="#step-3-optional-choose-your-compiler-and-load-it-using-the-module-command-if-it-is-available-on-your-system">Step 3 (optional): choose your compiler, and load it using the module command if it is available on your system</a></li>
-<li><a class="reference internal" href="#step-4-optional-install-i-o-api-note-this-assumes-you-have-already-installed-netcdf-c-and-fortran-libraries">Step 4 (optional): Install I/O API (note, this assumes you have already installed netCDF C and Fortran Libraries)</a></li>
-<li><a class="reference internal" href="#step-5-install-cmaq-with-ddm-3d">Step 5: Install CMAQ with DDM-3D</a></li>
-<li><a class="reference internal" href="#step-6-edit-the-config-cmaq-csh-to-specify-the-paths-of-the-ioapi-and-netcdf-libraries">Step 6. Edit the config_cmaq.csh to specify the paths of the ioapi and netCDF libraries</a></li>
-<li><a class="reference internal" href="#step-7-copy-the-bldit-cctm-csh-script-to-a-new-bldit-cctm-cb6r5-m3dry-ddm-csh-bldit-script-and-make-the-following-edits">Step 7: Copy the bldit_cctm.csh script to a new bldit_cctm_cb6r5_m3dry_ddm.csh bldit script, and make the following edits:</a></li>
-<li><a class="reference internal" href="#step-8-run-the-bldit-cctm-csh-script">Step 8: Run the bldit_cctm.csh script</a></li>
-<li><a class="reference internal" href="#step-9-edit-the-emission-control-namelist-to-recognize-the-cmaq-regions-file">Step 9: Edit the Emission Control Namelist to recognize the CMAQ_REGIONS file</a></li>
-<li><a class="reference internal" href="#step-10-example-of-emissions-scaling-reduce-the-pt-egu-emissions-in-pa-by-25-optional-step">Step 10: Example of emissions scaling (Reduce the PT_EGU emissions in PA by 25%) (Optional step)</a></li>
-<li><a class="reference internal" href="#step-11-install-the-cmaq-ddm-3d-reference-input-and-output-benchmark-data">Step 11: Install the CMAQ-DDM-3D reference input and output benchmark data</a></li>
-<li><a class="reference internal" href="#step-12-review-the-cmaq-ddm3d-runscript">Step 12: Review the CMAQ-DDM3D runscript</a></li>
-<li><a class="reference internal" href="#step-13-verify-that-the-run-was-successful">Step 13: Verify that the run was successful</a></li>
-<li><a class="reference internal" href="#step-14-compare-output-with-the-2-day-benchmark-outputs-provided-on-the-cmas-center-aws-open-data-program">Step 14: Compare output with the 2 day benchmark outputs provided on the CMAS Center AWS Open Data Program</a></li>
-<li><a class="reference internal" href="#step-15-compare-sensitivities">Step 15: Compare sensitivities</a></li>
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procedure-to-build-and-run-the-cmaq-ddm3d-model-using-cb6r5-mechanism-and-m3dry-dry-deposition-scheme-using-gnu-compiler">Procedure to build and run the CMAQ-DDM3D model using cb6r5 mechanism and m3dry dry deposition scheme using gnu compiler:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-download-and-run-the-cmaqv5-5-cb6r5-benchmark-case-without-ddm3d-to-confirm-that-your-model-run-is-consistent-with-the-provided-benchmark-output">Step 1: Download and run the CMAQv5.5 cb6r5 benchmark case (without DDM3D) to confirm that your model run is consistent with the provided benchmark output.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-read-the-user-guide-chapter-on-the-decoupled-direct-method-in-three-dimensions">Step 2: Read the User Guide Chapter on the Decoupled Direct Method in Three Dimensions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-optional-choose-your-compiler-and-load-it-using-the-module-command-if-it-is-available-on-your-system">Step 3 (optional): choose your compiler, and load it using the module command if it is available on your system</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-optional-install-i-o-api-note-this-assumes-you-have-already-installed-netcdf-c-and-fortran-libraries">Step 4 (optional): Install I/O API (note, this assumes you have already installed netCDF C and Fortran Libraries)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-install-cmaq-with-ddm-3d">Step 5: Install CMAQ with DDM-3D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-edit-the-config-cmaq-csh-to-specify-the-paths-of-the-ioapi-and-netcdf-libraries">Step 6. Edit the config_cmaq.csh to specify the paths of the ioapi and netCDF libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-copy-the-bldit-cctm-csh-script-to-a-new-bldit-cctm-cb6r5-m3dry-ddm-csh-bldit-script-and-make-the-following-edits">Step 7: Copy the bldit_cctm.csh script to a new bldit_cctm_cb6r5_m3dry_ddm.csh bldit script, and make the following edits:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-8-run-the-bldit-cctm-csh-script">Step 8: Run the bldit_cctm.csh script</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-9-edit-the-emission-control-namelist-to-recognize-the-cmaq-regions-file">Step 9: Edit the Emission Control Namelist to recognize the CMAQ_REGIONS file</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-10-example-of-emissions-scaling-reduce-the-pt-egu-emissions-in-pa-by-25-optional-step">Step 10: Example of emissions scaling (Reduce the PT_EGU emissions in PA by 25%) (Optional step)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-11-install-the-cmaq-ddm-3d-reference-input-and-output-benchmark-data">Step 11: Install the CMAQ-DDM-3D reference input and output benchmark data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-12-review-the-cmaq-ddm3d-runscript">Step 12: Review the CMAQ-DDM3D runscript</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-13-verify-that-the-run-was-successful">Step 13: Verify that the run was successful</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-14-compare-output-with-the-2-day-benchmark-outputs-provided-on-the-cmas-center-aws-open-data-program">Step 14: Compare output with the 2 day benchmark outputs provided on the CMAS Center AWS Open Data Program</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-15-compare-sensitivities">Step 15: Compare sensitivities</a></li>
 </ul>
-</li>
-</ul>
-
-  </div></div>
+  </nav></div>
 
 </div></div>
               

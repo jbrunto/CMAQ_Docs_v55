@@ -332,17 +332,43 @@
   </div>
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-<h3><a href="../../../../index.html"></a></h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../../DOCS/Getting_Started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../../DOCS/Users_Guide/README.html">CMAQ User’s Guide</a></li>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../DOCS/Getting_Started.html">Getting Started</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../DOCS/Users_Guide/README.html">CMAQ User’s Guide</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../DOCS/Users_Guide/CMAQ_UG_ch01_overview.html">1. Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../DOCS/Users_Guide/CMAQ_UG_ch02_program_structure.html">2. Program Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../DOCS/Users_Guide/CMAQ_UG_ch03_preparing_compute_environment.html">3. Preparing Compute Environment for CMAQ Simulations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../DOCS/Users_Guide/CMAQ_UG_ch04_model_inputs.html">4. Model Input Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../DOCS/Users_Guide/CMAQ_UG_ch05_running_a_simulation.html">5. Running a CMAQ Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../DOCS/Users_Guide/CMAQ_UG_ch06_model_configuration_options.html">6. Model Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../DOCS/Users_Guide/CMAQ_UG_ch07_model_outputs.html">7. Model Output Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../DOCS/Users_Guide/CMAQ_UG_ch08_analysis_tools.html">8. Analysis Tools for CMAQ output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../DOCS/Users_Guide/CMAQ_UG_ch09_process_analysis.html">9. Process Analysis and Budget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../DOCS/Users_Guide/CMAQ_UG_ch10_HDDM-3D.html">10. Decoupled Direct Method in Three Dimensions (CMAQ-DDM-3D)</a></li>
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../../../DOCS/Users_Guide/CMAQ_UG_ch11_ISAM.html">11. Integrated Source Apportionment Method (CMAQ-ISAM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../DOCS/Users_Guide/CMAQ_UG_ch12_sulfur_tracking.html">12. Sulfur Tracking Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../DOCS/Users_Guide/CMAQ_UG_ch13_WRF-CMAQ.html">13. WRF-CMAQ Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../DOCS/Users_Guide/CMAQ_UG_ch14_MPAS-CMAQ.html">14. MPAS-CMAQ Model</a></li>
+
+</ul>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../DOCS/Users_Guide/Tutorials/README.html">CMAQ Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../DOCS/Release_Notes/README.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../DOCS/Release_FAQ/README.html">FAQs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../DOCS/Community_Support.html">Community Support</a></li>
 </ul>
-</div>
+
+    </div>
+</nav></div>
     </div>
   
   
@@ -824,51 +850,55 @@ CRACMM2;”NO”;”NO”;1.0;14;2.1429</p>
 
 
   <div class="sidebar-secondary-item">
-  <div>
-    <h3><a href="../../../../index.html"></a></h3>
-    <ul>
-<li><a class="reference internal" href="#">Created 19 Mar 2009 by Chris Allen.</a></li>
-<li><a class="reference internal" href="#revised-april-2017-for-compatibility-with-cmaqv5-2">Revised April 2017 for compatibility with CMAQv5.2</a></li>
-<li><a class="reference internal" href="#this-gspro-component-contains-only-biogenic-profiles-the-profiles-were-originally-in">This GSPRO component contains only biogenic profiles. The profiles were originally in</a></li>
-<li><a class="reference internal" href="#the-emf-dataset-gspro-static-cmaq-version-8-16mar2009-they-were-moved-to-a">the EMF dataset “gspro_static_cmaq”, version 8 (16mar2009). They were moved to a</a></li>
-<li><a class="reference internal" href="#new-dataset-so-that-biogenic-only-species-do-not-appear-in-the-model-ready-files">new dataset so that biogenic-only species do not appear in the model-ready files</a></li>
-<li><a class="reference internal" href="#for-non-biogenic-sectors-that-have-pre-speciated-voc-in-the-inventory-specifically">for non-biogenic sectors that have pre-speciated VOC in the inventory (specifically,</a></li>
-<li><a class="reference internal" href="#ck-05b-othpt">2005ck_05b othpt).</a></li>
-<li><a class="reference internal" href="#this-version-is-based-on-beis-3-6-1">This version is based on BEIS 3.6.1</a></li>
-<li><a class="reference internal" href="#id1"></a></li>
-<li><a class="reference internal" href="#definition-of-fields">Definition of Fields:</a></li>
-<li><a class="reference internal" href="#mechanism-code">Mechanism Code</a></li>
-<li><a class="reference internal" href="#maps-to-biog-spro-in-the-cmaq-run-script">Maps to BIOG_SPRO in the CMAQ run-script</a></li>
-<li><a class="reference internal" href="#maps-to-spnprf-inside-cmaq">Maps to SPNPRF inside CMAQ</a></li>
-<li><a class="reference internal" href="#options">Options -</a></li>
-<li><a class="reference internal" href="#b10c5-cb05-based-mechanisms">B10C5: CB05-based mechanisms</a></li>
-<li><a class="reference internal" href="#b10c6-cb6r3-based-mechanisms-ae6">B10C6: CB6r3-based mechanisms: ae6</a></li>
-<li><a class="reference internal" href="#b10c6ae7-cb6r-3-5-ae7-based-mechanism">B10C6AE7: CB6r[3,5] - ae7 based mechanism</a></li>
-<li><a class="reference internal" href="#hotp-modified-to-split-out-apin-and-not-include-in-terp">1/8/2018 HOTP modified to split out APIN and not include in TERP</a></li>
-<li><a class="reference internal" href="#b10rd-racm2-based-mechanisms">B10RD: RACM2-based mechanisms</a></li>
-<li><a class="reference internal" href="#xiaoyang-chen-at-northeastern-university-notified-that-cmaq-is-not-generating-any-monoterpene">Xiaoyang Chen at Northeastern University notified that CMAQ is not generating any monoterpene</a></li>
-<li><a class="reference internal" href="#emissions-when-in-line-option-is-enabled-with-racm2">emissions when in-line option is enabled with RACM2</a></li>
-<li><a class="reference internal" href="#replaced-b10rd-with-b3v10-for-racm2-06-08-2021">Replaced “B10RD” with “B3V10” for RACM2 (06/08/2021)</a></li>
-<li><a class="reference internal" href="#b10sp-saprc07t-based-mechanisms-aero6-and-aero7-compatible">B10SP: SAPRC07t-based mechanisms (aero6 and aero7 compatible)</a></li>
-<li><a class="reference internal" href="#cracmm1-cracmm1-based-biogenic-mapping-added-9-2021-dev-by-k-s-and-h-o-t-p">CRACMM1: CRACMM1-based biogenic mapping (added 9/2021, dev by K.S. and H.O.T.P)</a></li>
-<li><a class="reference internal" href="#valid-for-cracmm1-aq-and-cracmm1amore-aq">valid for CRACMM1_AQ and CRACMM1AMORE_AQ</a></li>
-<li><a class="reference internal" href="#polnam">POLNAM</a></li>
-<li><a class="reference internal" href="#name-of-specific-voc-emitted-by">Name of Specific VOC emitted by</a></li>
-<li><a class="reference internal" href="#biogenic-source">biogenic source;</a></li>
-<li><a class="reference internal" href="#specnm">SPECNM</a></li>
-<li><a class="reference internal" href="#cmaq-biogenic-emissions-species-name">CMAQ Biogenic Emissions species name;</a></li>
-<li><a class="reference internal" href="#spltfac-mol-mol">SPLTFAC (mol/mol)</a></li>
-<li><a class="reference internal" href="#conversion-factor-from-moles-of-beis-voc">Conversion factor from moles of BEIS VOC</a></li>
-<li><a class="reference internal" href="#species-to-moles-of-cmaq-emissions-species">species to moles of CMAQ emissions species;</a></li>
-<li><a class="reference internal" href="#sdiv-g-mol">SDIV (g/mol)</a></li>
-<li><a class="reference internal" href="#mass-of-carbon-atoms-in-the-beis-molecule">Mass of carbon atoms in the BEIS molecule;</a></li>
-<li><a class="reference internal" href="#smfac-dimensionless">SMFAC (dimensionless)</a></li>
-<li><a class="reference internal" href="#beis-voc-molecular-weight-divided-by-the">BEIS VOC Molecular weight divided by the</a></li>
-<li><a class="reference internal" href="#mass-of-the-carbon-atoms-in-the-molecule">mass of the carbon atoms in the molecule;</a></li>
-<li><a class="reference internal" href="#id2"></a></li>
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Created 19 Mar 2009 by Chris Allen.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#revised-april-2017-for-compatibility-with-cmaqv5-2">Revised April 2017 for compatibility with CMAQv5.2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#this-gspro-component-contains-only-biogenic-profiles-the-profiles-were-originally-in">This GSPRO component contains only biogenic profiles. The profiles were originally in</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-emf-dataset-gspro-static-cmaq-version-8-16mar2009-they-were-moved-to-a">the EMF dataset “gspro_static_cmaq”, version 8 (16mar2009). They were moved to a</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#new-dataset-so-that-biogenic-only-species-do-not-appear-in-the-model-ready-files">new dataset so that biogenic-only species do not appear in the model-ready files</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#for-non-biogenic-sectors-that-have-pre-speciated-voc-in-the-inventory-specifically">for non-biogenic sectors that have pre-speciated VOC in the inventory (specifically,</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ck-05b-othpt">2005ck_05b othpt).</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#this-version-is-based-on-beis-3-6-1">This version is based on BEIS 3.6.1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definition-of-fields">Definition of Fields:</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mechanism-code">Mechanism Code</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#maps-to-biog-spro-in-the-cmaq-run-script">Maps to BIOG_SPRO in the CMAQ run-script</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#maps-to-spnprf-inside-cmaq">Maps to SPNPRF inside CMAQ</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#options">Options -</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#b10c5-cb05-based-mechanisms">B10C5: CB05-based mechanisms</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#b10c6-cb6r3-based-mechanisms-ae6">B10C6: CB6r3-based mechanisms: ae6</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#b10c6ae7-cb6r-3-5-ae7-based-mechanism">B10C6AE7: CB6r[3,5] - ae7 based mechanism</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hotp-modified-to-split-out-apin-and-not-include-in-terp">1/8/2018 HOTP modified to split out APIN and not include in TERP</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#b10rd-racm2-based-mechanisms">B10RD: RACM2-based mechanisms</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#xiaoyang-chen-at-northeastern-university-notified-that-cmaq-is-not-generating-any-monoterpene">Xiaoyang Chen at Northeastern University notified that CMAQ is not generating any monoterpene</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#emissions-when-in-line-option-is-enabled-with-racm2">emissions when in-line option is enabled with RACM2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#replaced-b10rd-with-b3v10-for-racm2-06-08-2021">Replaced “B10RD” with “B3V10” for RACM2 (06/08/2021)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#b10sp-saprc07t-based-mechanisms-aero6-and-aero7-compatible">B10SP: SAPRC07t-based mechanisms (aero6 and aero7 compatible)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cracmm1-cracmm1-based-biogenic-mapping-added-9-2021-dev-by-k-s-and-h-o-t-p">CRACMM1: CRACMM1-based biogenic mapping (added 9/2021, dev by K.S. and H.O.T.P)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#valid-for-cracmm1-aq-and-cracmm1amore-aq">valid for CRACMM1_AQ and CRACMM1AMORE_AQ</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#polnam">POLNAM</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#name-of-specific-voc-emitted-by">Name of Specific VOC emitted by</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#biogenic-source">biogenic source;</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#specnm">SPECNM</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cmaq-biogenic-emissions-species-name">CMAQ Biogenic Emissions species name;</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#spltfac-mol-mol">SPLTFAC (mol/mol)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conversion-factor-from-moles-of-beis-voc">Conversion factor from moles of BEIS VOC</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#species-to-moles-of-cmaq-emissions-species">species to moles of CMAQ emissions species;</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sdiv-g-mol">SDIV (g/mol)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-of-carbon-atoms-in-the-beis-molecule">Mass of carbon atoms in the BEIS molecule;</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#smfac-dimensionless">SMFAC (dimensionless)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#beis-voc-molecular-weight-divided-by-the">BEIS VOC Molecular weight divided by the</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mass-of-the-carbon-atoms-in-the-molecule">mass of the carbon atoms in the molecule;</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"></a></li>
 </ul>
 
-  </div></div>
+  </nav></div>
 
 </div></div>
               

@@ -332,17 +332,43 @@
   </div>
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-<h3><a href="../../../index.html"></a></h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../Getting_Started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../README.html">CMAQ User’s Guide</a></li>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Getting_Started.html">Getting Started</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../README.html">CMAQ User’s Guide</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch01_overview.html">1. Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch02_program_structure.html">2. Program Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch03_preparing_compute_environment.html">3. Preparing Compute Environment for CMAQ Simulations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch04_model_inputs.html">4. Model Input Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch05_running_a_simulation.html">5. Running a CMAQ Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch06_model_configuration_options.html">6. Model Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch07_model_outputs.html">7. Model Output Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch08_analysis_tools.html">8. Analysis Tools for CMAQ output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch09_process_analysis.html">9. Process Analysis and Budget</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch10_HDDM-3D.html">10. Decoupled Direct Method in Three Dimensions (CMAQ-DDM-3D)</a></li>
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch11_ISAM.html">11. Integrated Source Apportionment Method (CMAQ-ISAM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch12_sulfur_tracking.html">12. Sulfur Tracking Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch13_WRF-CMAQ.html">13. WRF-CMAQ Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../CMAQ_UG_ch14_MPAS-CMAQ.html">14. MPAS-CMAQ Model</a></li>
+
+</ul>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="README.html">CMAQ Tutorials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Release_Notes/README.html">Release Notes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Release_FAQ/README.html">FAQs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Community_Support.html">Community Support</a></li>
 </ul>
-</div>
+
+    </div>
+</nav></div>
     </div>
   
   
@@ -677,40 +703,40 @@ Example Title:</p></li>
 
 
   <div class="sidebar-secondary-item">
-  <div>
-    <h3><a href="../../../index.html"></a></h3>
-    <ul>
-<li><a class="reference internal" href="#">CMAQ Debugging Tips</a><ul>
-<li><a class="reference internal" href="#building-cmaq">Building CMAQ</a><ul>
-<li><a class="reference internal" href="#prerequisite-build-libraries-and-cmaq-using-gcc-or-intel-compilers">Prerequisite: Build Libraries and CMAQ using gcc or intel compilers</a></li>
-<li><a class="reference internal" href="#verify-that-an-executable-was-created">Verify that an executable was created</a></li>
-<li><a class="reference internal" href="#inspecting-cmaq-build-log-files">Inspecting CMAQ Build log files</a></li>
-<li><a class="reference internal" href="#if-you-encounter-an-error-building-cmaq">If you encounter an error building CMAQ</a></li>
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-cmaq">Building CMAQ</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisite-build-libraries-and-cmaq-using-gcc-or-intel-compilers">Prerequisite: Build Libraries and CMAQ using gcc or intel compilers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verify-that-an-executable-was-created">Verify that an executable was created</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspecting-cmaq-build-log-files">Inspecting CMAQ Build log files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#if-you-encounter-an-error-building-cmaq">If you encounter an error building CMAQ</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#running-cmaq">Running CMAQ</a><ul>
-<li><a class="reference internal" href="#prerequisite-run-the-cmaq-benchmark-case">Prerequisite: Run the CMAQ Benchmark case</a></li>
-<li><a class="reference internal" href="#inspect-the-cmaq-run-log-files">Inspect the CMAQ run log files</a></li>
-<li><a class="reference internal" href="#if-your-run-error-contains-the-following-message">If your run error contains the following message:</a></li>
-<li><a class="reference internal" href="#if-the-program-did-not-complete-successfully-for-another-reason">If the program did not complete successfully for another reason</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#running-cmaq">Running CMAQ</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prerequisite-run-the-cmaq-benchmark-case">Prerequisite: Run the CMAQ Benchmark case</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inspect-the-cmaq-run-log-files">Inspect the CMAQ run log files</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#if-your-run-error-contains-the-following-message">If your run error contains the following message:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#if-the-program-did-not-complete-successfully-for-another-reason">If the program did not complete successfully for another reason</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#if-you-encounter-an-error-running-cmaq">If you encounter an error running CMAQ</a></li>
-<li><a class="reference internal" href="#if-the-program-crashed">If the program crashed</a></li>
-<li><a class="reference internal" href="#submit-a-new-topic-issue-on-the-cmas-user-forum">Submit a new topic issue on the CMAS User Forum</a><ul>
-<li><a class="reference internal" href="#selecting-a-category-for-your-issue">Selecting a category for your issue</a></li>
-<li><a class="reference internal" href="#template-for-what-to-include-in-your-new-issue">Template for what to include in your new issue.</a><ul>
-<li><a class="reference internal" href="#example-of-information-to-include-in-a-new-issue-post">Example of information to include in a new issue post:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-you-encounter-an-error-running-cmaq">If you encounter an error running CMAQ</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#if-the-program-crashed">If the program crashed</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-a-new-topic-issue-on-the-cmas-user-forum">Submit a new topic issue on the CMAS User Forum</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-a-category-for-your-issue">Selecting a category for your issue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#template-for-what-to-include-in-your-new-issue">Template for what to include in your new issue.</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-information-to-include-in-a-new-issue-post">Example of information to include in a new issue post:</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#upload-additional-files-by-clicking-on-the-up-arrow-icon-in-the-menu-underneath-the-create-new-topic-title-including">Upload additional files by clicking on the up arrow icon in the menu underneath the Create New Topic Title including:</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#upload-additional-files-by-clicking-on-the-up-arrow-icon-in-the-menu-underneath-the-create-new-topic-title-including">Upload additional files by clicking on the up arrow icon in the menu underneath the Create New Topic Title including:</a></li>
 </ul>
 </li>
 </ul>
-
-  </div></div>
+  </nav></div>
 
 </div></div>
               
