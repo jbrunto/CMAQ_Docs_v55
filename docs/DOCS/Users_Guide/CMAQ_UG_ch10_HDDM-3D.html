@@ -7,8 +7,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>10. Decoupled Direct Method in Three Dimensions (CMAQ-DDM-3D) &#8212; CMAQ_Documentation 0.2 documentation</title>
+    <link href="../../_static/CMAQ_Logo_2_inch.png" sizes="600x593" rel="icon" type="image/png">
+    <title>10. Decoupled Direct Method in Three Dimensions (CMAQ-DDM-3D) &#8212; CMAQ 5.5+ documentation</title>
   
   
   
@@ -39,7 +39,7 @@
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../_static/documentation_options.js?v=10f1778b"></script>
+    <script src="../../_static/documentation_options.js?v=eec9c716"></script>
     <script src="../../_static/doctools.js?v=9bcbadda"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/design-tabs.js?v=f930bc37"></script>
@@ -47,6 +47,8 @@
     <link rel="canonical" href="https://jbrunto.github.io/CMAQ_Docs_v55/DOCS/Users_Guide/CMAQ_UG_ch10_HDDM-3D.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="11. Integrated Source Apportionment Method (CMAQ-ISAM)" href="CMAQ_UG_ch11_ISAM.html" />
+    <link rel="prev" title="9. Process Analysis and Budget" href="CMAQ_UG_ch09_process_analysis.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -96,9 +98,11 @@
   </button>
   
   
-  <div class="col-lg-3 navbar-header-items__start">
+  <div class="col-lg-9 navbar-header-items">
     
-      <div class="navbar-item">
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
 
   
     
@@ -115,44 +119,11 @@
       
     
     
-    <img src="../../_static/CMAQ_Logo_2_inch.png" class="logo__image only-light" alt="CMAQ_Documentation 0.2 documentation - Home"/>
-    <img src="../../_static/CMAQ_Logo_2_inch.png" class="logo__image only-dark pst-js-only" alt="CMAQ_Documentation 0.2 documentation - Home"/>
+    <img src="../../_static/CMAQ_Logo_2_inch.png" class="logo__image only-light" alt="CMAQ 5.5+ documentation - Home"/>
+    <img src="../../_static/CMAQ_Logo_2_inch.png" class="logo__image only-dark pst-js-only" alt="CMAQ 5.5+ documentation - Home"/>
   
   
 </a></div>
-    
-  </div>
-  
-  <div class="col-lg-9 navbar-header-items">
-    
-    <div class="me-auto navbar-header-items__center">
-      
-        <div class="navbar-item">
-<nav>
-  <ul class="bd-navbar-elements navbar-nav">
-    
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="README.html">
-    CMAQ User’s Guide
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="Tutorials/README.html">
-    CMAQ Tutorials
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../Developers_Guide/CMAQ_Dev_Guide.html">
-    Developers’ Guide
-  </a>
-</li>
-
-  </ul>
-</nav></div>
       
     </div>
     
@@ -192,6 +163,39 @@
           <a href="https://github.com/USEPA/CMAQ" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.epa.gov/cmaq" title="CMAQ - EPA Site" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../_static/epa_seal_w-ring_RGB-sm.png" class="icon-link-image" alt="CMAQ - EPA Site"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://forum.cmascenter.org/" title="User Forum" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../_static/cmas_logo.png" class="icon-link-image" alt="User Forum"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.epa.gov/cmaq/cracmm" title="CRACMM" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../_static/CRACMM_1.png" class="icon-link-image" alt="CRACMM"/></a>
+        </li>
 </ul></div>
       
     </div>
@@ -224,8 +228,6 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
@@ -239,31 +241,27 @@
           
           
             <div class="navbar-item">
-<nav>
-  <ul class="bd-navbar-elements navbar-nav">
+
+  
     
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="README.html">
-    CMAQ User’s Guide
-  </a>
-</li>
+  
 
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="Tutorials/README.html">
-    CMAQ Tutorials
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../Developers_Guide/CMAQ_Dev_Guide.html">
-    Developers’ Guide
-  </a>
-</li>
-
-  </ul>
-</nav></div>
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/CMAQ_Logo_2_inch.png" class="logo__image only-light" alt="CMAQ 5.5+ documentation - Home"/>
+    <img src="../../_static/CMAQ_Logo_2_inch.png" class="logo__image only-dark pst-js-only" alt="CMAQ 5.5+ documentation - Home"/>
+  
+  
+</a></div>
           
         
       </div>
@@ -294,6 +292,39 @@
           <a href="https://github.com/USEPA/CMAQ" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.epa.gov/cmaq" title="CMAQ - EPA Site" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../_static/epa_seal_w-ring_RGB-sm.png" class="icon-link-image" alt="CMAQ - EPA Site"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://forum.cmascenter.org/" title="User Forum" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../_static/cmas_logo.png" class="icon-link-image" alt="User Forum"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.epa.gov/cmaq/cracmm" title="CRACMM" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../../_static/CRACMM_1.png" class="icon-link-image" alt="CRACMM"/></a>
+        </li>
 </ul></div>
         
       </div>
@@ -301,21 +332,43 @@
   </div>
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Getting_Started.html">Getting Started</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
-        <div class="sidebar-primary-item">
-<h3><a href="../../index.html">Table of Contents</a></h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="README.html">CMAQ User’s Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tutorials/README.html">CMAQ Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Developers_Guide/CMAQ_Dev_Guide.html">Developers’ Guide</a></li>
 </ul>
-</div>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="README.html">CMAQ User’s Guide</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="CMAQ_UG_ch01_overview.html">1. Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CMAQ_UG_ch02_program_structure.html">2. Program Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CMAQ_UG_ch03_preparing_compute_environment.html">3. Preparing Compute Environment for CMAQ Simulations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CMAQ_UG_ch04_model_inputs.html">4. Model Input Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CMAQ_UG_ch05_running_a_simulation.html">5. Running a CMAQ Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CMAQ_UG_ch06_model_configuration_options.html">6. Model Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CMAQ_UG_ch07_model_outputs.html">7. Model Output Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CMAQ_UG_ch08_analysis_tools.html">8. Analysis Tools for CMAQ output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CMAQ_UG_ch09_process_analysis.html">9. Process Analysis and Budget</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">10. Decoupled Direct Method in Three Dimensions (CMAQ-DDM-3D)</a></li>
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="CMAQ_UG_ch11_ISAM.html">11. Integrated Source Apportionment Method (CMAQ-ISAM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CMAQ_UG_ch12_sulfur_tracking.html">12. Sulfur Tracking Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CMAQ_UG_ch13_WRF-CMAQ.html">13. WRF-CMAQ Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CMAQ_UG_ch14_MPAS-CMAQ.html">14. MPAS-CMAQ Model</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="Tutorials/README.html">CMAQ Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Release_Notes/README.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Release_FAQ/README.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Community_Support.html">Community Support</a></li>
+</ul>
+
+    </div>
+</nav></div>
     </div>
   
   
@@ -353,6 +406,9 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
+    
+    <li class="breadcrumb-item"><a href="README.html" class="nav-link">CMAQ User’s Guide</a></li>
+    
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">10. Decoupled Direct Method in Three Dimensions (CMAQ-DDM-3D)</span></li>
   </ul>
 </nav>
@@ -391,7 +447,7 @@
 </pre></div>
 </div>
 <p><strong>A note about I/O API installation for DDM applications</strong></p>
-<p>I/O APIv3.2  supports up to MXFILE3=64 open files, each with up to MXVARS3=2048. DDM-3D applications configured to calculate sensitivity to a large number of parameters may exceed this upper limit of model variables, leading to a model crash. To avoid this issue, users may use I/O API version 3.2 “large” that increases MXFILE3 to 512 and MXVARS3 to 16384. Instructions to build this version are found in <a class="reference external" href="https://github.com/USEPA/CMAQ/blob/main/DOCS/Users_Guide/CMAQ_UG_ch03_preparing_compute_environment.md#333-io-api-library">Chapter 3</a>.</p>
+<p>I/O APIv3.2  supports up to MXFILE3=64 open files, each with up to MXVARS3=2048. DDM-3D applications configured to calculate sensitivity to a large number of parameters may exceed this upper limit of model variables, leading to a model crash. To avoid this issue, users may use I/O API version 3.2 “large” that increases MXFILE3 to 512 and MXVARS3 to 16384. Instructions to build this version are found in <a class="reference external" href="https://github.com/USEPA/CMAQ/blob/main/DOCS/Users_Guide/CMAQ_UG_ch03_preparing_compute_environment.md#333-io-api-library" rel="noreferrer" target="_blank">Chapter 3 <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>.</p>
 </section>
 </section>
 <section id="cmaq-ddm-3d-run-instructions">
@@ -631,14 +687,14 @@ It is possible to calculate the sensitivity to ozone incursions at the top of th
 <p>CMAQ-DDM-3D has proven to be a very effective tool for air quality studies.  This implementation in CMAQ has been done with the intent to provide flexibility and computational efficiency, and also maintain the base CMAQ code structure. CMAQ-DDM-3D has been found to accurately simulate sensitivity of ozone and PM species to initial conditions, boundary conditions, and emissions of precursor species. However, CMAQ-DDM-3D remains a work in progress with known shortcomings and its accuracy has not been tested for all conceivable applications. Any errors should be reported to the provided contacts.</p>
 <section id="references">
 <h2>10.6 References<a class="headerlink" href="#references" title="Link to this heading">#</a></h2>
-<p>Cohan, D.S., &amp; Napelenok, S.L. (2011). Air Quality Response Modeling for Decision Support. Atmosphere, 2(3), 407-425. <a class="reference external" href="https://www.mdpi.com/2073-4433/2/3/407">doi: 10.3390/atmos2030407</a></p>
-<p>Napelenok, S.L., Cohan, D.S., Odman, M.T., &amp; Tonse, S. (2008). Extension and evaluation of sensitivity analysis capabilities in a photochemical model. Environmental Modelling &amp; Software, 23(8), 994-999. <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1364815207002186">doi: 10.1016/j.envsoft.2007.11.004</a></p>
-<p>Napelenok, S.L., Cohan, D.S., Hu, Y.T., &amp; Russell, A.G. (2006). Decoupled direct 3D sensitivity analysis for particulate matter (DDM-3D/PM). Atmospheric Environment, 40(32), 6112-6121. <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1352231006005012">doi: 10.1016/j.atmosenv.2006.05.039</a></p>
+<p>Cohan, D.S., &amp; Napelenok, S.L. (2011). Air Quality Response Modeling for Decision Support. Atmosphere, 2(3), 407-425. <a class="reference external" href="https://www.mdpi.com/2073-4433/2/3/407" rel="noreferrer" target="_blank">doi: 10.3390/atmos2030407 <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></p>
+<p>Napelenok, S.L., Cohan, D.S., Odman, M.T., &amp; Tonse, S. (2008). Extension and evaluation of sensitivity analysis capabilities in a photochemical model. Environmental Modelling &amp; Software, 23(8), 994-999. <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1364815207002186" rel="noreferrer" target="_blank">doi: 10.1016/j.envsoft.2007.11.004 <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></p>
+<p>Napelenok, S.L., Cohan, D.S., Hu, Y.T., &amp; Russell, A.G. (2006). Decoupled direct 3D sensitivity analysis for particulate matter (DDM-3D/PM). Atmospheric Environment, 40(32), 6112-6121. <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1352231006005012" rel="noreferrer" target="_blank">doi: 10.1016/j.atmosenv.2006.05.039 <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></p>
 <p>Cohan, D., Y. Hu, A. Hakami, A. Russell, 2005: Nonlinear response of ozone to emissions: source apportionment and sensitivity analysis. Environ. Sci. Technol., 39, 6739-6748.</p>
 <p>Dunker, A., G. Yarwood, J. Ortmann, and G. Wilson, 2002: The decoupled direct method for sensitivity analysis in a three-dimensional air quality model ‘Implementation, accuracy, and efficiency. Environ. Sci. Technol., 36, 2965-2976.</p>
 <p>Dunker, A. 1984: The decoupled direct method for calculating sensitivity coefficients in chemical kinetics. J. Chem. Phys., 81, 2385-2393.</p>
 <p><strong>Contact</strong></p>
-<p><a class="reference external" href="mailto:napelenok&#46;sergey&#37;&#52;&#48;epa&#46;gov">Sergey L<span>&#46;</span> Napelenok</a>, Computational Exposure Division, U.S. EPA</p>
+<p><a class="reference external" href="mailto:napelenok&#46;sergey&#37;&#52;&#48;epa&#46;gov" rel="noreferrer" target="_blank">Sergey L<span>&#46;</span> Napelenok <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a>, Computational Exposure Division, U.S. EPA</p>
 <!-- BEGIN COMMENT -->
 <p><a class="reference internal" href="CMAQ_UG_ch09_process_analysis.html"><span class="std std-doc">&lt;&lt; Previous Chapter</span></a> - <a class="reference internal" href="README.html"><span class="std std-doc">Home</span></a> - <a class="reference internal" href="CMAQ_UG_ch11_ISAM.html"><span class="std std-doc">Next Chapter &gt;&gt;</span></a><br>
 CMAQv5.5 User’s Guide <br></p>
@@ -656,6 +712,24 @@ CMAQv5.5 User’s Guide <br></p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="CMAQ_UG_ch09_process_analysis.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">9. Process Analysis and Budget</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="CMAQ_UG_ch11_ISAM.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">11. Integrated Source Apportionment Method (CMAQ-ISAM)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -696,15 +770,6 @@ CMAQv5.5 User’s Guide <br></p>
 
   </nav></div>
 
-  <div class="sidebar-secondary-item">
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="../../_sources/DOCS/Users_Guide/CMAQ_UG_ch10_HDDM-3D.md.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div></div>
-
 </div></div>
               
             
@@ -725,16 +790,6 @@ CMAQv5.5 User’s Guide <br></p>
 <div class="bd-footer__inner bd-page-width">
   
     <div class="footer-items__start">
-      
-        <div class="footer-item">
-
-  <p class="copyright">
-    
-      © Copyright 2024, CMAQ Developers.
-      <br/>
-    
-  </p>
-</div>
       
         <div class="footer-item">
 

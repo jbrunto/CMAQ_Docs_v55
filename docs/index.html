@@ -7,8 +7,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>CMAQ: The Community Multiscale Air Quality Modeling System &#8212; CMAQ_Documentation 0.2 documentation</title>
+    <link href="_static/CMAQ_Logo_2_inch.png" sizes="600x593" rel="icon" type="image/png">
+    <title>CMAQ: The Community Multiscale Air Quality Modeling System &#8212; CMAQ 5.5+ documentation</title>
   
   
   
@@ -39,7 +39,7 @@
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="_static/documentation_options.js?v=10f1778b"></script>
+    <script src="_static/documentation_options.js?v=eec9c716"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
@@ -47,7 +47,7 @@
     <link rel="canonical" href="https://jbrunto.github.io/CMAQ_Docs_v55/index.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="CMAQ User’s Guide" href="DOCS/Users_Guide/README.html" />
+    <link rel="next" title="Getting Started" href="DOCS/Getting_Started.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -97,9 +97,11 @@
   </button>
   
   
-  <div class="col-lg-3 navbar-header-items__start">
+  <div class="col-lg-9 navbar-header-items">
     
-      <div class="navbar-item">
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
 
   
     
@@ -116,44 +118,11 @@
       
     
     
-    <img src="_static/CMAQ_Logo_2_inch.png" class="logo__image only-light" alt="CMAQ_Documentation 0.2 documentation - Home"/>
-    <img src="_static/CMAQ_Logo_2_inch.png" class="logo__image only-dark pst-js-only" alt="CMAQ_Documentation 0.2 documentation - Home"/>
+    <img src="_static/CMAQ_Logo_2_inch.png" class="logo__image only-light" alt="CMAQ 5.5+ documentation - Home"/>
+    <img src="_static/CMAQ_Logo_2_inch.png" class="logo__image only-dark pst-js-only" alt="CMAQ 5.5+ documentation - Home"/>
   
   
 </a></div>
-    
-  </div>
-  
-  <div class="col-lg-9 navbar-header-items">
-    
-    <div class="me-auto navbar-header-items__center">
-      
-        <div class="navbar-item">
-<nav>
-  <ul class="bd-navbar-elements navbar-nav">
-    
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="DOCS/Users_Guide/README.html">
-    CMAQ User’s Guide
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="DOCS/Users_Guide/Tutorials/README.html">
-    CMAQ Tutorials
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="DOCS/Developers_Guide/CMAQ_Dev_Guide.html">
-    Developers’ Guide
-  </a>
-</li>
-
-  </ul>
-</nav></div>
       
     </div>
     
@@ -193,6 +162,39 @@
           <a href="https://github.com/USEPA/CMAQ" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.epa.gov/cmaq" title="CMAQ - EPA Site" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/epa_seal_w-ring_RGB-sm.png" class="icon-link-image" alt="CMAQ - EPA Site"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://forum.cmascenter.org/" title="User Forum" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/cmas_logo.png" class="icon-link-image" alt="User Forum"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.epa.gov/cmaq/cracmm" title="CRACMM" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/CRACMM_1.png" class="icon-link-image" alt="CRACMM"/></a>
+        </li>
 </ul></div>
       
     </div>
@@ -211,10 +213,6 @@
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
-  
 </div>
 
     </header>
@@ -228,7 +226,7 @@
         
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
 
   
@@ -240,31 +238,27 @@
           
           
             <div class="navbar-item">
-<nav>
-  <ul class="bd-navbar-elements navbar-nav">
+
+  
     
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="DOCS/Users_Guide/README.html">
-    CMAQ User’s Guide
-  </a>
-</li>
+  
 
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="DOCS/Users_Guide/Tutorials/README.html">
-    CMAQ Tutorials
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="DOCS/Developers_Guide/CMAQ_Dev_Guide.html">
-    Developers’ Guide
-  </a>
-</li>
-
-  </ul>
-</nav></div>
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/CMAQ_Logo_2_inch.png" class="logo__image only-light" alt="CMAQ 5.5+ documentation - Home"/>
+    <img src="_static/CMAQ_Logo_2_inch.png" class="logo__image only-dark pst-js-only" alt="CMAQ 5.5+ documentation - Home"/>
+  
+  
+</a></div>
           
         
       </div>
@@ -295,29 +289,44 @@
           <a href="https://github.com/USEPA/CMAQ" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.epa.gov/cmaq" title="CMAQ - EPA Site" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/epa_seal_w-ring_RGB-sm.png" class="icon-link-image" alt="CMAQ - EPA Site"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://forum.cmascenter.org/" title="User Forum" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/cmas_logo.png" class="icon-link-image" alt="User Forum"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.epa.gov/cmaq/cracmm" title="CRACMM" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/CRACMM_1.png" class="icon-link-image" alt="CRACMM"/></a>
+        </li>
 </ul></div>
         
       </div>
     
   </div>
-  
-    <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
-        <div class="sidebar-primary-item">
-<h3><a href="#">Table of Contents</a></h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="DOCS/Users_Guide/README.html">CMAQ User’s Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DOCS/Users_Guide/Tutorials/README.html">CMAQ Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="DOCS/Developers_Guide/CMAQ_Dev_Guide.html">Developers’ Guide</a></li>
-</ul>
-</div>
-    </div>
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
@@ -349,57 +358,84 @@
                   
   <section id="cmaq-the-community-multiscale-air-quality-modeling-system">
 <h1>CMAQ: The Community Multiscale Air Quality Modeling System<a class="headerlink" href="#cmaq-the-community-multiscale-air-quality-modeling-system" title="Link to this heading">#</a></h1>
-<p><strong>CMAQ:</strong> an active open-source development project of the U.S. EPA that consists of a suite of programs for conducting air quality model simulations. CMAQ combines current knowledge in atmospheric science and air quality modeling, multi-processor computing techniques, and an open source framework to deliver fast, technically sound estimates of ozone, particulates, toxics and acid deposition.</p>
+<p>This website contains documentation for the <a class="reference external" href="https://epa.gov/cmaq" rel="noreferrer" target="_blank">Community Multiscale Air Quality (CMAQ; “see-mak”) <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> modeling system. Source code and sample scripts are provided in the CMAQ GitHub repository: <a class="github reference external" href="https://github.com/USEPA/CMAQ" rel="noreferrer" target="_blank">USEPA/CMAQ <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Not the official CMAQ User’s Guide</p>
+<p>This documentation is currently under development. Please email <a class="reference external" href="mailto:CMAQ_Team&#37;&#52;&#48;epa&#46;gov" rel="noreferrer" target="_blank">CMAQ_Team<span>&#64;</span>epa<span>&#46;</span>gov <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a> if you encounter any issues.</p>
 </div>
-<p>This website contains documentation for the <a class="reference external" href="https://epa.gov/cmaq">Community Multiscale Air Quality (CMAQ)</a> modeling system. While documentation is packaged with the code when it is downloaded or cloned, users are encouraged to go [online] (https://github.com/USEPA/CMAQ/tree/main/DOCS) to view the latest version.</p>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
+<div class="sd-col sd-d-flex-row sd-pt-2 sd-pb-2 sd-pl-4 sd-pr-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-lg sd-text-center docutils">
+<img alt="" class="sd-card-img-top w-25 m-auto py-4 dark-light" src="_images/gs_seed_fin.svg" />
 <div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-User’s Guide</div>
-<p class="sd-card-text">Instructions on how to set up and run the model and information on CMAQ’s different science options and instrumented versions.</p>
-<p class="sd-card-text"><a class="reference internal" href="DOCS/Users_Guide/README.html"><span class="std std-doc">User’s Guide</span></a></p>
+<p class="sd-card-text">A brief introduction for new and returning users!</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-shadow-sm reference internal" href="DOCS/Getting_Started.html"><span class="doc">Getting Started</span></a></p>
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<div class="sd-col sd-d-flex-row sd-pt-2 sd-pb-2 sd-pl-4 sd-pr-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-lg sd-text-center docutils">
+<img alt="" class="sd-card-img-top w-25 m-auto py-4 dark-light" src="_images/ug_fin.svg" />
 <div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Tutorials</div>
-<p class="sd-card-text">Included with the User’s Guide, a series of short tutorials provide practical examples of how to set up and run CMAQ, exercise different features in the software, and better understand the software system.</p>
-<p class="sd-card-text"><a class="reference internal" href="DOCS/Users_Guide/Tutorials/README.html"><span class="std std-doc">Tutorials</span></a></p>
+<p class="sd-card-text">Overview of science processes and directions on how to run CMAQ.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-shadow-sm reference internal" href="DOCS/Users_Guide/README.html"><span class="doc">User’s Guide</span></a></p>
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<div class="sd-col sd-d-flex-row sd-pt-2 sd-pb-2 sd-pl-4 sd-pr-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-lg sd-text-center docutils">
+<img alt="" class="sd-card-img-top w-25 m-auto py-4 dark-light" src="_images/tut_fin.svg" />
 <div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Developer’s Guide</div>
-<p class="sd-card-text">A guide to version control practices and expectations adopted by the CMAQ development team and enforced on itself and any other collaborators who wish to contribute code.</p>
-<p class="sd-card-text"><a class="reference internal" href="DOCS/Developers_Guide/CMAQ_Dev_Guide.html"><span class="std std-doc">Developers’ Guide</span></a></p>
+<p class="sd-card-text">Practical examples of how to run CMAQ and exercise different features.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-shadow-sm reference internal" href="DOCS/Users_Guide/Tutorials/README.html"><span class="doc">Tutorials</span></a></p>
 </div>
 </div>
 </div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-text-center docutils">
+<div class="sd-col sd-d-flex-row sd-pt-2 sd-pb-2 sd-pl-4 sd-pr-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-lg sd-text-center docutils">
+<img alt="" class="sd-card-img-top w-25 m-auto py-4 dark-light" src="_images/rn_fin.svg" />
 <div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Release Notes</div>
-<p class="sd-card-text">Technical notes on the new features and science in this release of CMAQ are available on the CMAQ Wiki.</p>
-<p class="sd-card-text"><a class="reference external" href="https://github.com/USEPA/CMAQ/wiki/CMAQ-Release-Notes">Release Notes</a></p>
+<p class="sd-card-text">Notes on specific model changes from each CMAQ release.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-shadow-sm reference internal" href="DOCS/Release_Notes/README.html"><span class="doc">Release Notes</span></a></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-pt-2 sd-pb-2 sd-pl-4 sd-pr-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-lg sd-text-center docutils">
+<img alt="" class="sd-card-img-top w-25 m-auto py-4 dark-light" src="_images/faq_fin.svg" />
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Frequently asked questions for upgrading to the latest CMAQ versions.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-shadow-sm reference internal" href="DOCS/Release_FAQ/README.html"><span class="doc">FAQ Pages</span></a></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row sd-pt-2 sd-pb-2 sd-pl-4 sd-pr-4 docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-lg sd-text-center docutils">
+<img alt="" class="sd-card-img-top w-25 m-auto py-4 dark-light" src="_images/cs_table_fin.svg" />
+<div class="sd-card-body docutils">
+<p class="sd-card-text">User support resources to connect with CMAQ users around the world.</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-info sd-shadow-sm reference internal" href="DOCS/Community_Support.html"><span class="doc">Community Support</span></a></p>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="toctree-wrapper compound">
+<p>Please see our ‘How to Cite CMAQ’ page if you are interested in referencing one of our released model versions, scientific algorithms, or model output in your own publication: <a class="reference external" href="https://www.epa.gov/cmaq/how-cite-cmaq" rel="noreferrer" target="_blank">https://www.epa.gov/cmaq/how-cite-cmaq <svg version="1.1" width="1.0em" height="1.0em" viewBox="0 0 16 16" aria-hidden="true" style="display: inline-block; vertical-align: middle; fill: currentColor;"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"></path></svg></a></p>
+<p>Open Source License Information here: <a class="reference internal" href="license.html"><span class="std std-doc">MIT License</span></a></p>
+<div class="toctree-wrapper compound" id="cmaq-documentation">
 </div>
 </section>
 
@@ -414,11 +450,11 @@ Release Notes</div>
                   
 <div class="prev-next-area">
     <a class="right-next"
-       href="DOCS/Users_Guide/README.html"
+       href="DOCS/Getting_Started.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">CMAQ User’s Guide</p>
+        <p class="prev-next-title">Getting Started</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -428,21 +464,6 @@ Release Notes</div>
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/index.md.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div></div>
-
-</div></div>
               
             
           </div>
@@ -462,16 +483,6 @@ Release Notes</div>
 <div class="bd-footer__inner bd-page-width">
   
     <div class="footer-items__start">
-      
-        <div class="footer-item">
-
-  <p class="copyright">
-    
-      © Copyright 2024, CMAQ Developers.
-      <br/>
-    
-  </p>
-</div>
       
         <div class="footer-item">
 

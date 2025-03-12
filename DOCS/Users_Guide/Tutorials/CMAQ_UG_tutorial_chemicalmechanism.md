@@ -23,8 +23,8 @@ Goal: Modify the gas- and aerosol-phase chemical mechanisms in CMAQ, create new 
 12. ELMO_PROC.F
 
 ### Key Utilities  
-1. chemmech (see [documentation](../../../UTIL/chemmech/README.md))
-2. create_ebi (see [documentation](../../../UTIL/create_ebi/README.md))
+1. chemmech (see [documentation][link_1])
+2. create_ebi (see [documentation][link_2])
 *Note that these utilities are automatically run by the Autochem feature of the bldit_cctm.csh script, if it is activated.
 
 <a id=modifychem></a>
@@ -34,7 +34,7 @@ Goal: Modify the gas- and aerosol-phase chemical mechanisms in CMAQ, create new 
 
 <a id=mech_def></a>
 ### 1.2 Edit mech_*.def.
-The mech_*.def file lists all of CMAQ chemical reactions and is located at /$CMAQ_REPO/CCTM/src/MECHS/${mechanism}/mech_/${mechanism}.def. The [chemmech documentation](../../../UTIL/chemmech/README.md) describes formats for reaction rate constants dependent on temperature, atmospheric number density, water vapor, sunlight, model species and constants such as oxygen and methane mixing ratios. The documentation also gives a more detailed explanation of the mech.def (mechanism definitions) sections and formatting rules.
+The mech_*.def file lists all of CMAQ chemical reactions and is located at /$CMAQ_REPO/CCTM/src/MECHS/${mechanism}/mech_/${mechanism}.def. The [chemmech documentation][link_1] describes formats for reaction rate constants dependent on temperature, atmospheric number density, water vapor, sunlight, model species and constants such as oxygen and methane mixing ratios. The documentation also gives a more detailed explanation of the mech.def (mechanism definitions) sections and formatting rules.
 - All reactions must begin with a name in < > brackets.
 - All reactions must end with # followed by a reaction rate constant with units of cm<sup>3</sup>/(molecules s)
 - In this tutorial, all reactions regenerate the oxidant.
@@ -396,4 +396,12 @@ git push dev_push_repo newchem
 You should now be able to see these changes in Github online.
 
 
+[](relative_links_start)  
 
+[link_1]: ../../../UTIL/chemmech/
+[link_2]: ../../../UTIL/create_ebi/
+
+[](hardcode_links)  
+
+[link_1]: https://github.com/USEPA/CMAQ/blob/main/UTIL/chemmech/
+[link_2]: https://github.com/USEPA/CMAQ/blob/main/UTIL/create_ebi/ 
